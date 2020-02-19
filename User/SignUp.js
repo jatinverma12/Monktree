@@ -14,9 +14,9 @@ module.exports=({req,errors})=>{
 
 
 	<form action="/signup" method="POST">
-    <input  name="email" placeholder="Email">
+    <input  type="email" name="email" placeholder="Email">
     ${getError(errors,"email")}
-    <input  name="password" placeholder="Password">
+    <input  type="password" name="password" placeholder="Password">
     ${getError(errors,"password")}
 
     <input type="submit">
