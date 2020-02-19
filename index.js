@@ -79,11 +79,11 @@ async (req,res)=>{
     User.create(req.body,(err,rec)=>{
         if(err){
             console.log(err);
-            res.redirect('/signup');}
+           return res.redirect('/signup');}
         else{
             console.log(rec);
               req.session.userId=rec._id;
-                res.redirect('/');
+               return res.redirect('/');
 
         } 
             //req.session.userId=rec._id;
