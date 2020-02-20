@@ -44,17 +44,11 @@ app.get('/signup',(req,res)=>{
 });
 
 app.post('/signup',[
-    check("password")
-      .trim()
-      .isLength({ min: 4, max: 10 })
-      .withMessage("Must be between 4 to 10 characters"),
-
-      check("email")
+    check("email")
       .trim()
       .normalizeEmail()
       .isEmail()
       .withMessage("This is not email !")
- 
       .custom(async email => {
         try {
           await User.findOne({ email });
@@ -62,7 +56,12 @@ app.post('/signup',[
         } catch (error) {
           return Promise.resolve(true);
         }
-      })
+      }),
+
+      check("password")
+      .trim()
+      .isLength({ min: 4, max: 10 })
+      .withMessage("Must be between 4 to 10 characters")
     
         ],
 async (req,res)=>{
