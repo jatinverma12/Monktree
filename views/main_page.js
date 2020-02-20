@@ -74,8 +74,8 @@ module.exports=()=>{
               </ul>
               <!-- <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
-                <button type="button" class="btn btn-outline-danger">Login</button>
-                <button type="button" class="btn btn-outline-danger">Signup</button>
+                <a class="btn btn-outline-danger" href="/signin">Login</a>
+                <a class="btn btn-outline-danger" href="signup">Sign Up</a>
     
             <!-- </form> -->
             </div>
