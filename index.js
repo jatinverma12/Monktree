@@ -4,10 +4,13 @@ const bodyParser=require('body-parser');
 const cookieSession=require('cookie-session');
 const {check,validationResult}=require('express-validator');
 const app=express();
+const multer = require("multer");
+const upload = multer({storage: multer.memoryStorage(), limits:{files: 5}}) ;
 const { body } = require('express-validator');
 
 const landingPage=require('./views/main_page');
 const User       =require('./models/user');
+const Media      =require('./models/images_videos');
 const {createPassword,comparePasswords}=require('./Password');
 const {requireLogin}=require('./middleware');
 const signup=require('./User/SignUp');
@@ -146,9 +149,7 @@ app.post('/signin',
 
 
     ]
-
-
-    ,(req,res)=>{
+  ,(req,res)=>{
         const errors=validationResult(req);
     
 
@@ -167,8 +168,33 @@ app.get('/signout',(req,res)=>{
     req.session.userId=null;
     res.redirect('/signin');
 
-})
+});
 
+app.get('/content',(req,res)=>{
+  res.send(`<form action="/content"  method="POST" enctype="multipart/form-data">
+  <input type="file" name="images" multiple>
+  <input type="submit">
+  
+</form>`)
+});
+
+app.post('/content',upload.array('images',5),(req,res)=>{
+  res.send("submitted");
+  var images=[];
+  for(let i of req.files)
+  {
+    images.push(i.buffer.toString('base64'));
+  }
+  const record={
+    content:images
+  }
+  Media.create(record,(err,rec)=>{
+    if(err)
+    console.log(err);
+    console.log(rec);
+  })
+
+})
 app.listen(3000, () => {
     console.log('Listening');
   });
