@@ -10,7 +10,8 @@ const { body } = require('express-validator');
 
 const landingPage=require('./views/main_page');
 const User       =require('./models/user');
-const Media      =require('./models/images_videos');
+const Images      =require('./models/Images');
+const  Videos       =require('./models/Video');
 const {createPassword,comparePasswords}=require('./Password');
 const {requireLogin}=require('./middleware');
 const signup=require('./User/SignUp');
@@ -170,15 +171,16 @@ app.get('/signout',(req,res)=>{
 
 });
 
-app.get('/content',(req,res)=>{
-  res.send(`<form action="/content"  method="POST" enctype="multipart/form-data">
+app.get('/image',(req,res)=>{
+  res.send(`<form action="/image"  method="POST" enctype="multipart/form-data">
+    <h1>IMages:</h1>
   <input type="file" name="images" multiple>
   <input type="submit">
   
 </form>`)
 });
 
-app.post('/content',upload.array('images',5),(req,res)=>{
+app.post('/image',upload.array('images',5),(req,res)=>{
   res.send("submitted");
   var images=[];
   for(let i of req.files)
@@ -186,14 +188,51 @@ app.post('/content',upload.array('images',5),(req,res)=>{
     images.push(i.buffer.toString('base64'));
   }
   const record={
-    content:images
+  Images:images
   }
-  Media.create(record,(err,rec)=>{
+  Images.create(record,(err,rec)=>{
     if(err)
     console.log(err);
     console.log(rec);
   })
 
+});
+
+
+app.get('/video',(req,res)=>{
+  res.send(`<form action="/video"  method="POST" enctype="multipart/form-data">
+    <h1>Videos:</h1>
+  <input type="file" name="videos" multiple>
+  <input type="submit">
+  
+</form>`)
+});
+
+
+app.post('/video',upload.array('videos',5),(req,res)=>{
+  res.send("submitted");
+  var videos=[];
+  for(let i of req.files)
+  {
+    videos.push(i.buffer.toString('base64'));
+  }
+  const record={
+Videos:videos
+  }
+Videos.create(record,(err,rec)=>{
+    if(err)
+    console.log(err);
+    console.log(rec);
+  })
+
+});
+
+
+app.get('/c',(req,res)=>{
+  res.send(`<video controls>
+  <source type="video/mp4" src="data:video/mp4;base64,data string from database
+
+</video>`);
 })
 app.listen(3000, () => {
     console.log('Listening');
