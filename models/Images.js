@@ -1,5 +1,5 @@
 var mongoose=require("mongoose");
 var mediaSchema=new mongoose.Schema({
-	content:[String]
+	Images:[String]
 });
-module.exports=mongoose.model("Media",mediaSchema);
+module.exports=mongoose.model("Images",mediaSchema);
