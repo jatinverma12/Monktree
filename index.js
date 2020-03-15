@@ -1,6 +1,7 @@
 const express=require('express');
 const mongoose=require('mongoose');
 const bodyParser=require('body-parser');
+const path = require('path')
 const cookieSession=require('cookie-session');
 const {check,validationResult}=require('express-validator');
 const app=express();
@@ -10,14 +11,15 @@ const { body } = require('express-validator');
 
 const landingPage=require('./views/main_page');
 const User       =require('./models/user');
-const Images      =require('./models/Images');
-const  Videos       =require('./models/Video');
 const {createPassword,comparePasswords}=require('./Password');
 const {requireLogin}=require('./middleware');
 const signup=require('./User/SignUp');
 const signin=require('./User/SignIn');
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c7b492e989fde9672b636d17f95af5ab2170e9c4
 const MONGO_USERNAME = 'jatin';
 const MONGO_PASSWORD = 'qwerty';
 const MONGO_HOSTNAME = 'crunchstocks.com';
@@ -27,13 +29,19 @@ const MONGO_DB = 'USERINFO';
 const url = `mongodb://${MONGO_USERNAME}:${MONGO_PASSWORD}@${MONGO_HOSTNAME}:${MONGO_PORT}/${MONGO_DB}?authSource=admin`;
 
 mongoose.connect(url,{
+<<<<<<< HEAD
 	useUnifiedTopology:true,
 	useNewUrlParser:true
+=======
+  useUnifiedTopology:true,
+  useNewUrlParser:true
+>>>>>>> c7b492e989fde9672b636d17f95af5ab2170e9c4
 }).then(()=>{
   console.log("connected to DB!");
 }).catch(err=>{
-	console.log("error");
+  console.log("error");
 });
+
 
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({extended:true}));
@@ -50,8 +58,12 @@ app.use(
 
 
 app.get('/',(req,res)=>{
-    res.send(landingPage());
+    res.sendFile(path.join(__dirname, '/views/index.html'));
 });
+
+app.get('/landing',(req,res)=>{
+  res.send(landingPage())
+})
 /////ROUTES//////////////////////////////////
 app.get('/signup',(req,res)=>{
     res.send(signup({req}));
@@ -100,7 +112,7 @@ async (req,res)=>{
         else{
             console.log(rec);
               req.session.userId=rec._id;
-               return res.redirect('/');
+               return res.redirect('/landing');
 
         } 
             //req.session.userId=rec._id;
@@ -169,7 +181,7 @@ app.post('/signin',
         }
 
         req.session.userId=rec._id;
-        return res.redirect('/');
+        return res.redirect('/landing');
 
 });
 
@@ -180,69 +192,6 @@ app.get('/signout',(req,res)=>{
 
 });
 
-app.get('/image',(req,res)=>{
-  res.send(`<form action="/image"  method="POST" enctype="multipart/form-data">
-    <h1>IMages:</h1>
-  <input type="file" name="images" multiple>
-  <input type="submit">
-  
-</form>`)
-});
-
-app.post('/image',upload.array('images',5),(req,res)=>{
-  res.send("submitted");
-  var images=[];
-  for(let i of req.files)
-  {
-    images.push(i.buffer.toString('base64'));
-  }
-  const record={
-  Images:images
-  }
-  Images.create(record,(err,rec)=>{
-    if(err)
-    console.log(err);
-    console.log(rec);
-  })
-
-});
-
-
-app.get('/video',(req,res)=>{
-  res.send(`<form action="/video"  method="POST" enctype="multipart/form-data">
-    <h1>Videos:</h1>
-  <input type="file" name="videos" multiple>
-  <input type="submit">
-  
-</form>`)
-});
-
-
-app.post('/video',upload.array('videos',5),(req,res)=>{
-  res.send("submitted");
-  var videos=[];
-  for(let i of req.files)
-  {
-    videos.push(i.buffer.toString('base64'));
-  }
-  const record={
-Videos:videos
-  }
-Videos.create(record,(err,rec)=>{
-    if(err)
-    console.log(err);
-    console.log(rec);
-  })
-
-});
-
-
-app.get('/c',(req,res)=>{
-  res.send(`<video controls>
-  <source type="video/mp4" src="data:video/mp4;base64,data string from database
-
-</video>`);
-})
 app.listen(3000, () => {
     console.log('Listening');
   });
