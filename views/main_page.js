@@ -21,61 +21,11 @@ module.exports=()=>{
             </button>
           
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Image
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Footage
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Editorial
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Music
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                  </li>
-                  
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
-                </li>
-              </ul>
-              <!-- <form class="form-inline my-2 my-lg-0">
+                            <!-- <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
-                <a class="btn btn-outline-danger" href="/signin">Login</a>
-                <a class="btn btn-outline-danger" href="signup">Sign Up</a>
+		<a href="/signup" class="btn btn-outline-danger">SignUp</a>
+		<a href="/signin" class="btn btn-outline-danger">Login</a>
+                <a href="/signout" class="btn btn-outline-danger">Logout</a>
     
             <!-- </form> -->
             </div>
@@ -89,17 +39,7 @@ module.exports=()=>{
                 <button class="btn btn-danger" type="submit">Search</button>
             </form>
     
-            <div class="btn-group">
-                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Categories
-                </button>
-                <div class="dropdown-menu dropdown-menu-right">
-                  <button class="dropdown-item" type="button">ActionActionActionAction</button>
-                  <button class="dropdown-item" type="button">Another action</button>
-                  <button class="dropdown-item" type="button">Something else here</button>
-                </div>
-              </div>
-          </nav> <br>
+                      </nav> <br>
     <!------------------------background---------------------->
     
     <div class="background">
@@ -119,24 +59,7 @@ module.exports=()=>{
                         •  Use code PICK10FREE at checkout. 
                 </li>
             </ul>
-        </div>
-    
-          <div class="col-md-6 col-sm-12 col-xs-12" id="trial">
-            <h4>Free 1 month trail, cancel anytime.</h4>
-            <p>
-               <p class="para">After your first month:</p> 
-                <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                        <label class="form-check-label" for="exampleRadios1">
-                          10 images/month - annual plan   
-                        </label> 
-                </div>
-                <br> <button type="button" class="btn btn-danger btnn">Start your free trial</button>
-    
-            </p>
-           </div>    
-      </div>
-    </div>
+            </div>
     </div>
     <div class="blackb">
       Looking for corporate, agency or media solutions?

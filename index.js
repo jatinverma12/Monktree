@@ -16,10 +16,6 @@ const {requireLogin}=require('./middleware');
 const signup=require('./User/SignUp');
 const signin=require('./User/SignIn');
 
-<<<<<<< HEAD
-
-=======
->>>>>>> c7b492e989fde9672b636d17f95af5ab2170e9c4
 const MONGO_USERNAME = 'jatin';
 const MONGO_PASSWORD = 'qwerty';
 const MONGO_HOSTNAME = 'crunchstocks.com';
@@ -29,13 +25,7 @@ const MONGO_DB = 'USERINFO';
 const url = `mongodb://${MONGO_USERNAME}:${MONGO_PASSWORD}@${MONGO_HOSTNAME}:${MONGO_PORT}/${MONGO_DB}?authSource=admin`;
 
 mongoose.connect(url,{
-<<<<<<< HEAD
-	useUnifiedTopology:true,
-	useNewUrlParser:true
-=======
-  useUnifiedTopology:true,
   useNewUrlParser:true
->>>>>>> c7b492e989fde9672b636d17f95af5ab2170e9c4
 }).then(()=>{
   console.log("connected to DB!");
 }).catch(err=>{
@@ -54,14 +44,7 @@ app.use(
 
 
 
-
-
-
 app.get('/',(req,res)=>{
-    res.sendFile(path.join(__dirname, '/views/index.html'));
-});
-
-app.get('/landing',(req,res)=>{
   res.send(landingPage())
 })
 /////ROUTES//////////////////////////////////
@@ -112,7 +95,7 @@ async (req,res)=>{
         else{
             console.log(rec);
               req.session.userId=rec._id;
-               return res.redirect('/landing');
+               return res.redirect('/');
 
         } 
             //req.session.userId=rec._id;
@@ -181,17 +164,17 @@ app.post('/signin',
         }
 
         req.session.userId=rec._id;
-        return res.redirect('/landing');
+        return res.redirect('/');
 
 });
 
 
-app.get('/signout',(req,res)=>{
+app.get('/signout',requireLogin,(req,res)=>{
     req.session.userId=null;
-    res.redirect('/signin');
+    res.redirect('/');
 
 });
 
-app.listen(3000, () => {
+app.listen(80, () => {
     console.log('Listening');
   });
