@@ -55,160 +55,137 @@ module.exports=()=>{
         </div>
         <div class="row my-row" style="margin-top:1.25rem">
             <div class="col-md-4 col-sm-6 col-xs-12"> 
-                <img src="./images/1.jpeg" class=" conpic" alt="...">
-                <div class="card-body" style="cursor: pointer;padding:0.1rem;">
-                  <a class="btn btn-success" href="/download/1.jpg">Download</a>
+			<a href="./images/1.jpeg" download>
+  			<img src="./images/1.jpeg" alt="NOt supported by browser" class=" conpic" alt="...">
+			</a>
                   
                 </div>
             </div>
         
 
             <div class=" col-md-4 col-sm-6 col-xs-12"> 
-                <img src="./images/2.jpeg" class=" conpic" alt="...">
-                <div class="card-body" style="cursor: pointer;padding:0.1rem;">
-                  <a class="btn btn-success" href="/download/2.jpg">Download</a>
-                  
-                </div>
-            </div>
+                        <a href="./images/2.jpeg" download>
+  			<img src="./images/2.jpeg" alt="NOt supported by browser" class=" conpic" alt="...">
+			</a>
+    </div>
 
             <div class="col-md-4 col-sm-6 col-xs-12"> 
-                <img src="./images/3.jpeg" class=" conpic" alt="...">
-                <div class="card-body" style="cursor: pointer;padding:0.1rem;">
-                  <a class="btn btn-success" href="/download/3.jpg">Download</a>
-                  
-                </div>
+                <a href="./images/3.jpeg" download>
+  			<img src="./images/3.jpeg" alt="NOt supported by browser" class=" conpic" alt="...">
+			</a>
             </div>
         </div>
 
         <div class="row my-row" style="margin-top:1.25rem">
             <div class="col-md-4 col-sm-6 col-xs-12"> 
-                <img src="./images/4.jpeg" class=" conpic" alt="...">
-                <div class="card-body" style="cursor: pointer;padding:0.1rem;">
-                  <a class="btn btn-success" href="/download/4.jpg">Download</a>
+			<a href="./images/4.jpeg" download>
+  			<img src="./images/4.jpeg" alt="NOt supported by browser" class=" conpic" alt="...">
+			</a>
                   
                 </div>
             </div>
         
+
+            <div class=" col-md-4 col-sm-6 col-xs-12"> 
+                        <a href="./images/5.jpeg" download>
+  			<img src="./images/5.jpeg" alt="NOt supported by browser" class=" conpic" alt="...">
+			</a>
+    </div>
 
             <div class="col-md-4 col-sm-6 col-xs-12"> 
-                <img src="./images/5.jpeg" class=" conpic" alt="...">
-                <div class="card-body" style="cursor: pointer;padding:0.1rem;">
-                  <a class="btn btn-success" href="/download/5.jpg">Download</a>
-                  
-                </div>
-            </div>
-
-            <div class=" col-md-4 col-sm-6 col-xs-12"> 
-                <img src="./images/6.jpeg" class=" conpic" alt="...">
-                <div class="card-body" style="cursor: pointer;padding:0.1rem;">
-                  <a class="btn btn-success" href="/download/6.jpg">Download</a>
-                  
-                </div>
+                <a href="./images/6.jpeg" download>
+  			<img src="./images/6.jpeg" alt="NOt supported by browser" class=" conpic" alt="...">
+			</a>
             </div>
         </div>
 
+
         <div class="row my-row" style="margin-top:1.25rem">
-            <div class=" col-md-4 col-sm-6 col-xs-12"> 
-                <img src="./images/7.jpeg" class=" conpic" alt="...">
-                <div class="card-body" style="cursor: pointer;padding:0.1rem;">
-                  <a class="btn btn-success" href="/download/7.jpg">Download</a>
+            <div class="col-md-4 col-sm-6 col-xs-12"> 
+			<a href="./images/7.jpeg" download>
+  			<img src="./images/7.jpeg" alt="NOt supported by browser" class=" conpic" alt="...">
+			</a>
                   
                 </div>
             </div>
         
 
             <div class=" col-md-4 col-sm-6 col-xs-12"> 
-                <img src="./images/8.jpeg" class=" conpic" alt="...">
-                <div class="card-body" style="cursor: pointer;padding:0.1rem;">
-                  <a class="btn btn-success" href="/download/8.jpg">Download</a>
-                  
-                </div>
-            </div>
+                        <a href="./images/8.jpeg" download>
+  			<img src="./images/8.jpeg" alt="NOt supported by browser" class=" conpic" alt="...">
+			</a>
+    </div>
 
-            <div class=" col-md-4 col-sm-6 col-xs-12"> 
-                <img src="./images/9.jpeg" class=" conpic" alt="...">
-                <div class="card-body" style="cursor: pointer;padding:0.1rem;">
-                  <a class="btn btn-success" href="/download/9.jpg">Download</a>
-                  
-                </div>
+            <div class="col-md-4 col-sm-6 col-xs-12"> 
+                <a href="./images/9.jpeg" download>
+  			<img src="./images/9.jpeg" alt="NOt supported by browser" class=" conpic" alt="...">
+			</a>
             </div>
         </div>
 
         <div class="row my-row" style="margin-top:1.25rem">
-            <div class=" col-md-4 col-sm-6 col-xs-12"> 
-                <img src="./images/10.jpeg" class=" conpic" alt="...">
-                <div class="card-body" style="cursor: pointer;padding:0.1rem;">
-                  <a class="btn btn-success" href="/download/10.jpg">Download</a>
+            <div class="col-md-4 col-sm-6 col-xs-12"> 
+			<a href="./images/10.jpeg" download>
+  			<img src="./images/10.jpeg" alt="NOt supported by browser" class=" conpic" alt="...">
+			</a>
                   
                 </div>
             </div>
         
 
             <div class=" col-md-4 col-sm-6 col-xs-12"> 
-                <img src="./images/11.jpeg" class=" conpic" alt="...">
-                <div class="card-body" style="cursor: pointer;padding:0.1rem;">
-                  <a class="btn btn-success" href="/download/11.jpg">Download</a>
-                  
-                </div>
-            </div>
+                        <a href="./images/11.jpeg" download>
+  			<img src="./images/11.jpeg" alt="NOt supported by browser" class=" conpic" alt="...">
+			</a>
+    </div>
 
-            <div class=" col-md-4 col-sm-6 col-xs-12"> 
-                <img src="./images/12.jpeg" class=" conpic" alt="...">
-                <div class="card-body" style="cursor: pointer;padding:0.1rem;">
-                  <a class="btn btn-success" href="/download/12.jpg">Download</a>
-                  
-                </div>
+            <div class="col-md-4 col-sm-6 col-xs-12"> 
+                <a href="./images/12.jpeg" download>
+  			<img src="./images/12.jpeg" alt="NOt supported by browser" class=" conpic" alt="...">
+			</a>
             </div>
         </div>
 
-
         <div class="row my-row" style="margin-top:1.25rem">
-            <div class=" col-md-4 col-sm-6 col-xs-12"> 
-                <img src="./images/13.jpeg" class=" conpic" alt="...">
-                <div class="card-body" style="cursor: pointer;padding:0.1rem;">
-                  <a class="btn btn-success" href="/download/13.jpg">Download</a>
+            <div class="col-md-4 col-sm-6 col-xs-12"> 
+			<a href="./images/13.jpeg" download>
+  			<img src="./images/13.jpeg" alt="NOt supported by browser" class=" conpic" alt="...">
+			</a>
                   
                 </div>
             </div>
         
 
             <div class=" col-md-4 col-sm-6 col-xs-12"> 
-                <img src="./images/14.jpeg" class=" conpic" alt="...">
-                <div class="card-body" style="cursor: pointer;padding:0.1rem;">
-                  <a class="btn btn-success" href="/download/14.jpg">Download</a>
-                  
-                </div>
-            </div>
+                        <a href="./images/14.jpeg" download>
+  			<img src="./images/14.jpeg" alt="NOt supported by browser" class=" conpic" alt="...">
+			</a>
+    </div>
 
-            <div class=" col-md-4 col-sm-6 col-xs-12"> 
-                <img src="./images/15.jpeg" class=" conpic" alt="...">
-                <div class="card-body" style="cursor: pointer;padding:0.1rem;">
-                  <a class="btn btn-success" href="/download/15.jpg">Download</a>
-                  
-                </div>
+            <div class="col-md-4 col-sm-6 col-xs-12"> 
+                <a href="./images/15.jpeg" download>
+  			<img src="./images/15.jpeg" alt="NOt supported by browser" class=" conpic" alt="...">
+			</a>
             </div>
         </div>
 
         <div class="row my-row" style="margin-top:1.25rem">
-            <div class=" col-md-4 col-sm-6 col-xs-12"> 
-                <img src="./images/16.jpeg" class=" conpic" alt="...">
-                <div class="card-body" style="cursor: pointer;padding:0.1rem;">
-                  <a class="btn btn-success" href="/download/16.jpg">Download</a>
+            <div class="col-md-4 col-sm-6 col-xs-12"> 
+			<a href="./images/16.jpeg" download>
+  			<img src="./images/16.jpeg" alt="NOt supported by browser" class=" conpic" alt="...">
+			</a>
                   
                 </div>
             </div>
         
 
             <div class=" col-md-4 col-sm-6 col-xs-12"> 
-                <img src="./images/17.jpeg" class=" conpic" alt="...">
-                <div class="card-body" style="cursor: pointer;padding:0.1rem;">
-                  <a class="btn btn-success" href="/download/17.jpg">Download</a>
-                  
-                </div>
-            </div>
+                        <a href="./images/17.jpeg" download>
+  			<img src="./images/17.jpeg" alt="NOt supported by browser" class=" conpic" alt="...">
+			</a>
+    </div>
 
-            
-        </div>
+                    </div>
 
         <div class="row" style="margin-top:2rem">
             <h1 class="h4">

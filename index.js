@@ -180,7 +180,6 @@ app.get('/download/:name',(req,res)=>{
   var fs = require('fs'),
     request = require('request');
 
-  const route="http://crunchstocks.com/images"
 
 var download = function(uri, filename, callback){
   request.head(uri, function(err, res, body){
@@ -191,7 +190,7 @@ var download = function(uri, filename, callback){
   });
 };
 
-download(route+`/${req.params.name}`, `${req.params.name}`, function(){
+download(`http://crunchstocks.com/images/${req.params.name}`, `${req.params.name}`, function(){
   console.log('done');
 });
 });
