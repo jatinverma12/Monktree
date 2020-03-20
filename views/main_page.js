@@ -45,9 +45,7 @@ module.exports=()=>{
           </nav> <br>
     <!------------------------background---------------------->
     
-    <div class="background">
-      <!-- <img src="./images/lil" class="img1"> -->
-    </div>
+    
     
       <div class="container">
         <div class="row">
