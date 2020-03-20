@@ -56,7 +56,7 @@ module.exports=()=>{
             </h1>
         </div>
         <div class="row my-row" style="margin-top:1.25rem">
-            <div class="col col-md-4 col-sm-12 col-xs-12"> 
+            <div class="col-md-4 col-sm-6 col-xs-12"> 
                 <img src="./images/1.jpeg" class=" conpic" alt="...">
                 <div class="card-body" style="cursor: pointer;padding:0.1rem;">
                   <a class="btn btn-success" href="/download/1.jpg">Download</a>
@@ -65,7 +65,7 @@ module.exports=()=>{
             </div>
         
 
-            <div class="col col-md-4 col-sm-12 col-xs-12"> 
+            <div class=" col-md-4 col-sm-6 col-xs-12"> 
                 <img src="./images/2.jpeg" class=" conpic" alt="...">
                 <div class="card-body" style="cursor: pointer;padding:0.1rem;">
                   <a class="btn btn-success" href="/download/2.jpg">Download</a>
@@ -73,7 +73,7 @@ module.exports=()=>{
                 </div>
             </div>
 
-            <div class="col col-md-4 col-sm-12 col-xs-12"> 
+            <div class="col-md-4 col-sm-6 col-xs-12"> 
                 <img src="./images/3.jpeg" class=" conpic" alt="...">
                 <div class="card-body" style="cursor: pointer;padding:0.1rem;">
                   <a class="btn btn-success" href="/download/3.jpg">Download</a>
@@ -83,7 +83,7 @@ module.exports=()=>{
         </div>
 
         <div class="row my-row" style="margin-top:1.25rem">
-            <div class="col col-md-4 col-sm-12 col-xs-12"> 
+            <div class="col-md-4 col-sm-6 col-xs-12"> 
                 <img src="./images/4.jpeg" class=" conpic" alt="...">
                 <div class="card-body" style="cursor: pointer;padding:0.1rem;">
                   <a class="btn btn-success" href="/download/4.jpg">Download</a>
@@ -92,7 +92,7 @@ module.exports=()=>{
             </div>
         
 
-            <div class="col col-md-4 col-sm-12 col-xs-12"> 
+            <div class="col-md-4 col-sm-6 col-xs-12"> 
                 <img src="./images/5.jpeg" class=" conpic" alt="...">
                 <div class="card-body" style="cursor: pointer;padding:0.1rem;">
                   <a class="btn btn-success" href="/download/5.jpg">Download</a>
@@ -100,7 +100,7 @@ module.exports=()=>{
                 </div>
             </div>
 
-            <div class="col col-md-4 col-sm-12 col-xs-12"> 
+            <div class=" col-md-4 col-sm-6 col-xs-12"> 
                 <img src="./images/6.jpeg" class=" conpic" alt="...">
                 <div class="card-body" style="cursor: pointer;padding:0.1rem;">
                   <a class="btn btn-success" href="/download/6.jpg">Download</a>
@@ -110,7 +110,7 @@ module.exports=()=>{
         </div>
 
         <div class="row my-row" style="margin-top:1.25rem">
-            <div class="col col-md-4 col-sm-12 col-xs-12"> 
+            <div class=" col-md-4 col-sm-6 col-xs-12"> 
                 <img src="./images/7.jpeg" class=" conpic" alt="...">
                 <div class="card-body" style="cursor: pointer;padding:0.1rem;">
                   <a class="btn btn-success" href="/download/7.jpg">Download</a>
@@ -119,7 +119,7 @@ module.exports=()=>{
             </div>
         
 
-            <div class="col col-md-4 col-sm-12 col-xs-12"> 
+            <div class=" col-md-4 col-sm-6 col-xs-12"> 
                 <img src="./images/8.jpeg" class=" conpic" alt="...">
                 <div class="card-body" style="cursor: pointer;padding:0.1rem;">
                   <a class="btn btn-success" href="/download/8.jpg">Download</a>
@@ -127,7 +127,7 @@ module.exports=()=>{
                 </div>
             </div>
 
-            <div class="col col-md-4 col-sm-12 col-xs-12"> 
+            <div class=" col-md-4 col-sm-6 col-xs-12"> 
                 <img src="./images/9.jpeg" class=" conpic" alt="...">
                 <div class="card-body" style="cursor: pointer;padding:0.1rem;">
                   <a class="btn btn-success" href="/download/9.jpg">Download</a>
@@ -137,7 +137,7 @@ module.exports=()=>{
         </div>
 
         <div class="row my-row" style="margin-top:1.25rem">
-            <div class="col col-md-4 col-sm-12 col-xs-12"> 
+            <div class=" col-md-4 col-sm-6 col-xs-12"> 
                 <img src="./images/10.jpeg" class=" conpic" alt="...">
                 <div class="card-body" style="cursor: pointer;padding:0.1rem;">
                   <a class="btn btn-success" href="/download/10.jpg">Download</a>
@@ -146,7 +146,7 @@ module.exports=()=>{
             </div>
         
 
-            <div class="col col-md-4 col-sm-12 col-xs-12"> 
+            <div class=" col-md-4 col-sm-6 col-xs-12"> 
                 <img src="./images/11.jpeg" class=" conpic" alt="...">
                 <div class="card-body" style="cursor: pointer;padding:0.1rem;">
                   <a class="btn btn-success" href="/download/11.jpg">Download</a>
@@ -154,7 +154,7 @@ module.exports=()=>{
                 </div>
             </div>
 
-            <div class="col col-md-4 col-sm-12 col-xs-12"> 
+            <div class=" col-md-4 col-sm-6 col-xs-12"> 
                 <img src="./images/12.jpeg" class=" conpic" alt="...">
                 <div class="card-body" style="cursor: pointer;padding:0.1rem;">
                   <a class="btn btn-success" href="/download/12.jpg">Download</a>
@@ -165,7 +165,7 @@ module.exports=()=>{
 
 
         <div class="row my-row" style="margin-top:1.25rem">
-            <div class="col col-md-4 col-sm-12 col-xs-12"> 
+            <div class=" col-md-4 col-sm-6 col-xs-12"> 
                 <img src="./images/13.jpeg" class=" conpic" alt="...">
                 <div class="card-body" style="cursor: pointer;padding:0.1rem;">
                   <a class="btn btn-success" href="/download/13.jpg">Download</a>
@@ -174,7 +174,7 @@ module.exports=()=>{
             </div>
         
 
-            <div class="col col-md-4 col-sm-12 col-xs-12"> 
+            <div class=" col-md-4 col-sm-6 col-xs-12"> 
                 <img src="./images/14.jpeg" class=" conpic" alt="...">
                 <div class="card-body" style="cursor: pointer;padding:0.1rem;">
                   <a class="btn btn-success" href="/download/14.jpg">Download</a>
@@ -182,7 +182,7 @@ module.exports=()=>{
                 </div>
             </div>
 
-            <div class="col col-md-4 col-sm-12 col-xs-12"> 
+            <div class=" col-md-4 col-sm-6 col-xs-12"> 
                 <img src="./images/15.jpeg" class=" conpic" alt="...">
                 <div class="card-body" style="cursor: pointer;padding:0.1rem;">
                   <a class="btn btn-success" href="/download/15.jpg">Download</a>
@@ -192,7 +192,7 @@ module.exports=()=>{
         </div>
 
         <div class="row my-row" style="margin-top:1.25rem">
-            <div class="col col-md-4 col-sm-12 col-xs-12"> 
+            <div class=" col-md-4 col-sm-6 col-xs-12"> 
                 <img src="./images/16.jpeg" class=" conpic" alt="...">
                 <div class="card-body" style="cursor: pointer;padding:0.1rem;">
                   <a class="btn btn-success" href="/download/16.jpg">Download</a>
@@ -201,7 +201,7 @@ module.exports=()=>{
             </div>
         
 
-            <div class="col col-md-4 col-sm-12 col-xs-12"> 
+            <div class=" col-md-4 col-sm-6 col-xs-12"> 
                 <img src="./images/17.jpeg" class=" conpic" alt="...">
                 <div class="card-body" style="cursor: pointer;padding:0.1rem;">
                   <a class="btn btn-success" href="/download/17.jpg">Download</a>
@@ -219,7 +219,7 @@ module.exports=()=>{
         </div>
 
         <div class="row my-row" style="margin-top:1.25rem">
-            <div class="col col-md-4 col-sm-12 col-xs-12"> 
+            <div class=" col-md-4 col-sm-6 col-xs-12"> 
                 <video width="320" height="240" controls>
                   <source src="./videos/1.mp4" type="video/mp4">
                 </video>
